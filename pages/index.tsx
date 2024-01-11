@@ -8,6 +8,7 @@ import HashMoneyBalance from "../components/HashMoneyBalance";
 import Mint from "../components/Mint";
 import Image from "next/image";
 import coinImage from "../assets/Logopit_16902006371871.png";
+import supplyChartdata from "../assets/meta-chart (1).png"
 import AirdropEligibilityChecker from "../components/Eligibility";
 
 const contractAddress = "0xEddb551809Af5f6FE388288749cc89CB1bC5C495";
@@ -92,8 +93,8 @@ const Home: NextPage = () => {
                 <Image
                   src={coinImage}
                   alt="HashMoney Image"
-                  width={350} // Set the desired width of the image
-                  height={300} // Set the desired height of the image
+                  width={200} // Set the desired width of the image
+                  height={200} // Set the desired height of the image
                 />
               </div>
   
@@ -156,7 +157,14 @@ const Home: NextPage = () => {
                 
               </Flex>
               
-  
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Image
+                  src={supplyChartdata}
+                  alt="HashMoneychart"
+                  width={500} // Set the desired width of the image
+                  height={500} // Set the desired height of the image
+                />
+              </div>
               
               <div className={styles.connect}></div>
   <div className={styles.grid}>
@@ -399,6 +407,15 @@ const Home: NextPage = () => {
       </p>
     </Flex>
   </div>
+
+  <div style={{ display: "flex", justifyContent: "center" }}>
+                <Image
+                  src={supplyChartdata}
+                  alt="HashMoneychart"
+                  width={500} // Set the desired width of the image
+                  height={500} // Set the desired height of the image
+                />
+              </div>
   
   <div>
   <Flex h="10vh" justifyContent="center" alignItems="center" mb={4}>
