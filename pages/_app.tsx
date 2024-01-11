@@ -1,6 +1,6 @@
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import type { AppProps } from "next/app";
 import {
-  ThirdwebProvider,
   walletConnect,
   ConnectWallet,
   coinbaseWallet,
@@ -10,7 +10,6 @@ import {
   paperWallet,
   safeWallet,
   smartWallet,
-  useContract,
 } from "@thirdweb-dev/react";
 import {
   Polygon,
@@ -27,51 +26,47 @@ import React from "react";
 import { Container, Flex, ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 
-
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "polygon";
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div
       style={{
-        background: "linear-gradient(to right, #005E02, #00D305, #007F03 )",
+        background: "linear-gradient(to right, #23253e, #BED6FE, #23253e )",
       }}
-    >
-      <ThirdwebProvider
-        activeChain={activeChain}
-        supportedChains={[
-          Polygon,
-          Ethereum,
-          Binance,
-          Optimism,
-          EthereumClassic,
-          Arbitrum,
-          Dogechain,
-        ]}
-        supportedWallets={[
-          metamaskWallet(),
-          walletConnect(),
-          coinbaseWallet(),
-          safeWallet(),
-        ]}
       >
-        <ChakraProvider>
-          <Navbar />
-          <Component {...pageProps} />
-          
-        </ChakraProvider>
-      </ThirdwebProvider>
-    </div>
-    )
-  }
-  
-  function Component() {
-    const { contract, isLoading } = useContract("0xD4B35b6Cc6aa684Cb2BB4113cDFc19d5ffFF7c41");
-  
-  
+      < ThirdwebProvider
+      activeChain="polygon"
+      clientId="bc0102ed4e30c97c3b41ac8269fd9f11" // You can get a client id from dashboard settings
+      supportedChains={[
+        Polygon,
+        Ethereum,
+        Binance,
+        Optimism,
+        EthereumClassic,
+        Arbitrum,
+        Dogechain,
+      ]}
+      supportedWallets={[
+        metamaskWallet(),
+        walletConnect(),
+        coinbaseWallet(),
+        safeWallet(),
+      ]}
+     
+    >
+      <ChakraProvider>
+        <Navbar />
+        <Component {...pageProps} />
+        
+      </ChakraProvider>
+    </ThirdwebProvider>
+  </div>
+  )
 }
+
+function Component() {
+  const { contract, isLoading } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
+}
+
+
 
 export default MyApp;

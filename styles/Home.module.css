@@ -54,7 +54,7 @@
 }
 
 .card {
-  background-color: #068100;
+  background-color: #23253e;
   margin: 1rem;
   padding: 1.25rem;
   text-align: center;
@@ -69,9 +69,9 @@
 .card:hover,
 .card:focus,
 .card:active {
-  background-color: #6cd65c;
-  color: #6bff64;
-  border-color: #d4ff00;
+  background-color: #1f1f1f;
+  color: #3e54ff;
+  border-color: #2600ff;
 }
 
 .card h2 {
@@ -99,7 +99,7 @@
 
 
 .card {
-  border-color: #750a0a;
+  border-color: #0a0247;
 }
 
 

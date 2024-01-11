@@ -4,15 +4,15 @@ import { Web3Button } from "@thirdweb-dev/react";
 export default function Mint() {
   return (
 
-    <Card p={5} mt={5} bg="#D0FFC7">
+    <Card p={5} mt={5} bg="#23253e">
     <Heading textAlign="center" bg="blue.500"
-        bgGradient="linear(to-r, blue.500, green.500)"
+        bgGradient="linear(to-r, blue.900, blue.500)"
         borderRadius="md"
         p={1} fontSize="xl"
-        style={{ color: 'white' }}>Mint PEPE4U</Heading>
+        style={{ color: 'white' }}>Mint #MO</Heading>
     <SimpleGrid columns={1} width="275px" mx="auto">
       <Card p={2} m={2} bg="blue.500"
-        bgGradient="linear(to-r, blue.500, green.500)"
+        bgGradient="linear(to-r, blue.900, blue.500)"
         borderRadius="md"
         >
         <Box textAlign="center" mb={1}>
@@ -24,12 +24,12 @@ export default function Mint() {
          
 
     <Web3Button
-      contractAddress="0xD4B35b6Cc6aa684Cb2BB4113cDFc19d5ffFF7c41"
+      contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
       action={(contract) => {
         contract.call("mint", [])
       }}
     >
-      Mint $PEPE4U
+      Mint #MO
     </Web3Button>
 
  </Stack>

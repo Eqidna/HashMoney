@@ -93,3 +93,20 @@ function Component() {
 }
 
 export default MyApp;
+
+Client ID pp
+Identifies your application. It should generally be restricted to specific domains (web) and/or bundle-ids (native).
+249b8123e743d58e62b3a721af430a68
+
+Secret Key
+Identifies and authenticates your application from the backend.
+KHf_JEXK9g99LcVP4_ydo3lTtMTqdHOcCn2VSOXKD4BuvBZuQpEQrvCcnrHErLOCyt84ig1b6eY96aWg0dv95A
+
+cid #mo
+bc0102ed4e30c97c3b41ac8269fd9f11
+seckey
+gAgngywK34YCBVsfAUgEJY3WitMKD2kNXgE4D11G8jmMGez9H9AA9c_Hhnw2ojpxKOnHq9C89bo_JLSaTO276A
+cid qdna
+eb54bc7719937d0bb2c9c0693d42423c
+seckey
+Gyz8mFa67Ea7Q22_YIxaS_Z-pr9prTsnTVEtCTxWde2HMHiREvdIVI09HZNJBj-LR-zT_cAm2o6Mgy7LRTLQaQ

@@ -13,7 +13,7 @@ const truncateAddress = (address: string) => {
 };
 
 export default function LatestTransactions() {
-  const { contract } = useContract("0xD4B35b6Cc6aa684Cb2BB4113cDFc19d5ffFF7c41");
+  const { contract } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
   const [blockTimestamps, setBlockTimestamps] = useState({});
 
   // Fetch the latest event
@@ -39,7 +39,7 @@ export default function LatestTransactions() {
     ) : (
       allEvents?.slice(0, 3).map((event: any, index: number) => (
         <Card key={index} p={2} my={1} bg="#white">
-          <a href="https://polygonscan.com/token/0xEEA95a9166A2Bc398ad2695807B9289b230246b3" target="_blank" rel="noopener noreferrer">
+          <a href="https://polygonscan.com/token/0xEddb551809Af5f6FE388288749cc89CB1bC5C495" target="_blank" rel="noopener noreferrer">
             <Text fontSize="xl">{event.data?.message}</Text>
             <Text>Event: {event.event || event.eventName}</Text>
             <Text>Amount: {event.data?.amount ? ethers.utils.formatEther(event.data.amount) : ""}</Text>

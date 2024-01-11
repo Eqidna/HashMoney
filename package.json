@@ -10,15 +10,14 @@
     "lint": "next lint",
     "export": "next export",
     "predeploy": "npm run build",
-
     "deploy": "next build && next export && npx thirdweb@latest upload out gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@thirdweb-dev/react": "^3",
-    "@thirdweb-dev/sdk": "^3.10.24",
+    "@thirdweb-dev/react": "^3.16.5",
+    "@thirdweb-dev/sdk": "^3.10.67",
     "ethers": "^5.7.2",
     "next": "^13",
     "react": "^18.2",

@@ -4,7 +4,7 @@ import { useContract, useContractRead } from "@thirdweb-dev/react";
 
 export default function AirdropEligibilityChecker() {
   const [walletAddress, setWalletAddress] = useState("");
-  const { contract } = useContract("0xD4B35b6Cc6aa684Cb2BB4113cDFc19d5ffFF7c41");
+  const { contract } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
   const eligibilityRead = useContractRead(contract, "isEligibleForAirdrop", [walletAddress]);
   const { data: eligibilityResult, isLoading } = eligibilityRead;
 
@@ -18,10 +18,10 @@ export default function AirdropEligibilityChecker() {
   };
 
   return (
-    <Card p={5} mt={5} bg="#D0FFC7">
+    <Card p={5} mt={5} bg="#23253e">
       <Heading
         textAlign="center"
-        bgGradient="linear(to-r, blue.500, green.500)"
+        bgGradient="linear(to-r, blue.900, blue.500)"
         borderRadius="md"
         p={1}
         fontSize="xl"
@@ -33,7 +33,7 @@ export default function AirdropEligibilityChecker() {
         <Card
           p={2}
           m={2}
-          bgGradient="linear(to-r, blue.500, green.500)"
+          bgGradient="linear(to-r, blue.900, blue.500)"
           borderRadius="md"
         >
           <Box textAlign="center" mb={1}>
