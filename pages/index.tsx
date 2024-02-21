@@ -225,7 +225,7 @@ const Home: NextPage = () => {
   <div className={styles.connect}></div>
   <div className={styles.grid}>
     <a
-      href="https://twitter.com/EqidnaTokenQDNA"
+      href="https://twitter.com/HashSkribeMoney"
       className={`${styles.card} ${styles.sameSize}`}
       target="_blank"
     >
