@@ -60,7 +60,9 @@ const Home: NextPage = () => {
           <div className={styles.container}>
             <main className={styles.main}>
               <h1 className={`${styles.title} ${styles.reduceSpace}`}>
-                <b>HashMoney, Utility Token for HashSkribe! #MO, Digital Money Minted By The People, For The People!</b>{" "}
+                <b>HashMoney, Utility Token for HashSkribe! 
+                <br />
+                #MO, Digital Money Minted By The People, For The People!</b>{" "}
                 <a
                   href="https://polygonscan.com/address/0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                   className={styles.link}
