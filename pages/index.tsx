@@ -427,9 +427,7 @@ const Home: NextPage = () => {
                 </div>
               </a>
   
-              
-            </div>
-          </div>
+          
 
             <div className={styles.grid}>
             <div className={styles.outerContainer}>
