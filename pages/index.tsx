@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         
         ) : (
           <Container maxW="1200px" centerContent>
-            <Heading color="white" fontSize="40px">
+            <Heading color="white" fontSize="50px">
             Welcome to HASH MONEY!
             </Heading>
   
@@ -110,7 +110,6 @@ const Home: NextPage = () => {
               </p>
              
               <Flex alignItems="center" flexWrap="wrap">
-                
                 <p
                   className={`${styles.description} ${styles.reduceSpace}`}
                   style={{
@@ -123,13 +122,10 @@ const Home: NextPage = () => {
                 >
                  Hash Money, holds the key to the future, we eagerly await your arrival.
                 </p>
-               
+            </Flex>
                 
-                
-              </Flex>
-              <Flex alignItems="center" flexWrap="wrap">
-                
-                <p
+    <Flex alignItems="center" flexWrap="wrap">
+    <p
     className={`${styles.description} ${styles.reduceSpace}`}
     style={{
       color: "white",
@@ -138,7 +134,7 @@ const Home: NextPage = () => {
       flex: "1",
       margin: "0 20px",
     }}
-  >
+   >
     Brace yourself to reshape the rules, and surpass the limitations forced upon civilization.
     Mo symbolizes hope for a brighter future. Embark on a journey to redefine the concept of currency and restore its intrinsic value.
     Join #MO in taking the first step towards making money great again.
@@ -149,13 +145,9 @@ const Home: NextPage = () => {
       <li>HODL your #MO.</li>
       <li>Mint your 1% HashMoney interest every 15 days.</li>
     </ul>
-  </p>
+      </p>
   
-                
-                
-                
-                
-              </Flex>
+    </Flex>
               
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Image
@@ -202,7 +194,53 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>              
-  
+
+
+<div className={styles.grid}>
+    <a
+      href="https://thirdweb.com/polygon/0xEddb551809Af5f6FE388288749cc89CB1bC5C495/explorer"
+      className={`${styles.card} ${styles.sameSize}`}
+      target="_blank"
+    >
+      <h2
+        className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
+        style={{ color: "white", fontSize: "16px" }}
+      >
+        Read/Write #MO on Polygon
+      </h2>
+      <p className={styles.paragraph} style={{ color: "white" }}>
+        Thirdweb: Another option for interacting with HashMoney's smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
+      </p>
+    </a>
+  </div>    
+
+
+
+
+                
+<div className={styles.grid}>
+    <a
+      href="https://thirdweb.com/ethereum-classic/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d/explorer"
+      className={`${styles.card} ${styles.sameSize}`}
+      target="_blank"
+    >
+      <h2
+        className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
+        style={{ color: "white", fontSize: "16px" }}
+      >
+        Read/Write #MO on ETC
+      </h2>
+      <p className={styles.paragraph} style={{ color: "white" }}>
+        Thirdweb: Another option for interacting with HashMoney's smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
+      </p>
+    </a>
+  </div>    
+
+
+                
+
+
+                
   <div className={styles.connect}></div>
   <div className={styles.grid}>
     <a
