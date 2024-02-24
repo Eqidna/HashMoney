@@ -311,7 +311,7 @@ const Home: NextPage = () => {
   
                 <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
               </div>
-            </main>
+    </main>
           </div>
         </Container>
         <Container maxW="800px" centerContent>
