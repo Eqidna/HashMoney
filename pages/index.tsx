@@ -175,7 +175,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         BUY #MO
       </h2>
@@ -193,7 +193,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         BUY #MO
       </h2>
@@ -212,7 +212,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         Polygonscan #MO
       </h2>
@@ -230,7 +230,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         Blockscout ETCscan #MO
       </h2>
@@ -248,9 +248,9 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
-        DEXTOOLS #MO
+        Polygon DEXTOOLS #MO
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
         Everything in one place.
@@ -266,7 +266,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         ETC DEXTOOLS #MO
       </h2>
@@ -285,7 +285,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "20px" }}
+        style={{ color: "white", fontSize: "16px" }}
       >
         Follow HashMoney on Twitter
       </h2>
@@ -311,7 +311,7 @@ const Home: NextPage = () => {
         </Container>
         <Container maxW="800px" centerContent>
           <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
-          <Heading color="white" fontSize="50px">
+          <Heading color="white" fontSize="40px">
             How to buy
           </Heading>
   
@@ -326,7 +326,7 @@ const Home: NextPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
+                    style={{ color: "white", fontSize: "16px" }}
                   >
                     Create a Wallet
                   </h2>
@@ -353,7 +353,7 @@ const Home: NextPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
+                    style={{ color: "white", fontSize: "16px" }}
                   >
                     Get Some $MATIC
                   </h2>
@@ -381,7 +381,7 @@ const Home: NextPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
+                    style={{ color: "white", fontSize: "16px" }}
                   >
                     Go to Uniswap
                   </h2>
@@ -411,7 +411,7 @@ const Home: NextPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
+                    style={{ color: "white", fontSize: "16px" }}
                   >
                     Switch $MATIC for #MO
                   </h2>
@@ -439,7 +439,7 @@ const Home: NextPage = () => {
                 <div className={styles.cardContent}>
                   <h2
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
+                    style={{ color: "white", fontSize: "16px" }}
                   >
                     Switch $ETC for #MO
                   </h2>
@@ -457,7 +457,7 @@ const Home: NextPage = () => {
             
           <div>
             <Flex h="10vh" justifyContent="center" alignItems="center">
-              <Heading color="white" fontSize="20px"></Heading>
+              <Heading color="white" fontSize="16px"></Heading>
             </Flex>
           </div>
   
