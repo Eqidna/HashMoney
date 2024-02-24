@@ -536,7 +536,7 @@ const Home: NextPage = () => {
     </p>
     
   </div>
-  
+  </div>
   
   
         </Container>
