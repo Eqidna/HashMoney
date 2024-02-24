@@ -125,6 +125,8 @@ const Home: NextPage = () => {
                     along with HashMoney, it is a lifeline for the next generation and their families, 
                     <br />
                     providing them with a digital currency immune to the ravages of inflation.
+                    <br />
+                    <br />
                 </p>
             </Flex>
                 
