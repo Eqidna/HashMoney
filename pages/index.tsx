@@ -209,7 +209,7 @@ const Home: NextPage = () => {
         Read/Write #MO on Polygon
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
-        Thirdweb: Another option for interacting with HashMoney's smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
+        Thirdweb: Another option for interacting with the HashMoney smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
       </p>
     </a>
   </div>    
@@ -231,7 +231,7 @@ const Home: NextPage = () => {
         Read/Write #MO on ETC
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
-        Thirdweb: Another option for interacting with HashMoney's smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
+        Thirdweb: Another option for interacting with the HashMoney smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
       </p>
     </a>
   </div>    
