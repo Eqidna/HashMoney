@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                     margin: "0 20px",
                   }}
                 >
-                    HashSkribe isn't merely a platform for advocating free speech;
+                    HashSkribe is not merely a platform for advocating free speech;
                     <br /> 
                     along with HashMoney, it is a lifeline for the next generation and their families, 
                     <br />
