@@ -169,7 +169,8 @@ const Home: NextPage = () => {
                 />
               </div>
               
-              <div className={styles.connect}></div>
+              <div className={styles.connect}></div> {/* Here's the missing div */}
+              
   <div className={styles.grid}>
     <a
       href="https://app.uniswap.org/#/swap?inputCurrency=MATIC&outputCurrency=0xEddb551809Af5f6FE388288749cc89CB1bC5C495&chainId=137"
@@ -187,7 +188,7 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
-                <div className={styles.connect}></div>
+                <div className={styles.connect}></div> {/* Another missing div */}
   <div className={styles.grid}>
     <a
       href="https://app.hebeswap.com/#/add/ETC/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
@@ -387,28 +388,31 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Go to Uniswap/HEBESwap
+                    Swap $MATIC/$ETC for #MO
                   </h2>
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
-                    Connect to Uniswap/HEBESWAP. Go to app.uniswap.org or app.hebeswap.com/#/swap in Google Chrome or
-                    on the browser inside your Metamask or other wallet app. Connect your wallet.
-                    Paste the #MO token address into Uniswap/HebeSwap, select #MO HashMoney,
-                    and confirm. When Metamask prompts you for a wallet signature,
-                    sign.
+                    Head over to Uniswap and swap your $MATIC/$ETC for #MO. If
+                    you're unsure how to do this, here's a{" "}
+                    <a
+                      href="https://www.youtube.com/watch?v=92nTZhWpCTA"
+                      target="_blank"
+                    >
+                      tutorial
+                    </a>
+                    .
                   </p>
                 </div>
               </a>
-              
+             
             </div>
           </div>
   
           <div className={styles.grid}>
             <div className={styles.outerContainer}>
               
-  
               <a
-                href="https://app.uniswap.org/#/swap?inputCurrency=MATIC&outputCurrency=0xEddb551809Af5f6FE388288749cc89CB1bC5C495&chainId=137"
+                href="https://polygonscan.com/address/0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                 className={`${styles.card} ${styles.widerContainer}`}
                 target="_blank"
               >
@@ -417,132 +421,21 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Switch $MATIC for #MO
+                    View your Transactions
                   </h2>
+  
                   <p className={styles.paragraph} style={{ color: "white" }}>
-                    We have ZERO taxes so you dont need to worry about buying
-                    with a specific slippage, although you may need to use
-                    slippage during times of market volatility.
+                    Once you've swapped your $MATIC/$ETC for #MO, you can view
+                    your transaction on Polygonscan/Etcscan.
                   </p>
                 </div>
               </a>
-  
-             </div>
-          </div>
-
-            <div className={styles.grid}>
-            <div className={styles.outerContainer}>
-              
-  
-              <a
-                href="https://app.hebeswap.com/#/swap?inputCurrency=ETC&outputCurrency=0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
-                className={`${styles.card} ${styles.widerContainer}`}
-                target="_blank"
-              >
-                <div className={styles.cardContent}>
-                  <h2
-                    className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
-                    style={{ color: "white", fontSize: "20px" }}
-                  >
-                    Switch $ETC for #MO
-                  </h2>
-                  <p className={styles.paragraph} style={{ color: "white" }}>
-                    We have ZERO taxes so you dont need to worry about buying
-                    with a specific slippage, although you may need to use
-                    slippage during times of market volatility.
-                  </p>
-                </div>
-              </a>
-  
-              
+             
             </div>
           </div>
-  
-  
-          <div>
-            <Flex h="10vh" justifyContent="center" alignItems="center">
-              <Heading color="white" fontSize="20px"></Heading>
-            </Flex>
-          </div>
-  
-          <div>
-    <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
-      <p
-        style={{
-          color: "white",
-          fontSize: "22px",
-          fontWeight: "bold",
-          wordWrap: "break-word",
-          maxWidth: "500px",
-        }}
-      >
-        #MO, for payment! #Mo for a Better Tomorrow for Families Around the Globe.
-      </p>
-    </Flex>
-    <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
-      <p
-        style={{
-          color: "white",
-          fontSize: "20px",
-          fontWeight: "bold",
-          wordWrap: "break-word",
-          maxWidth: "500px",
-        }}
-      >
-        You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic or 
-          Ethereum Classic to cover the gas fees.
-      </p>
-    </Flex>
-  </div>
-
-  <div style={{ display: "flex", justifyContent: "center" }}>
-                <Image
-                  src={supplyChartdata}
-                  alt="HashMoneychart"
-                  width={500} // Set the desired width of the image
-                  height={500} // Set the desired height of the image
-                />
-              </div>
-  
-  <div>
-  <Flex h="10vh" justifyContent="center" alignItems="center" mb={4}>
-    <p
-      style={{
-        color: "white",
-        fontWeight: "bold",
-        fontSize: "20px",
-        wordWrap: "break-word",
-        maxWidth: "500px",
-        marginBottom: "20px", // Increase the margin bottom for larger spacing
-      }}
-    >
-     Hash Money, holds the key to the future, we eagerly await your arrival.
-    </p>
-    </Flex>
-  </div>
-  
-  <div>
-    <p
-      style={{
-        color: "white",
-        fontWeight: "bold",
-        fontSize: "20px",
-        wordWrap: "break-word",
-        maxWidth: "500px",
-        marginBottom: "20px", // Increase the margin bottom for larger spacing
-      }}
-    >
-      HASHSKRIBE IS COMING. STAY TUNED!
-    </p>
-    
-  </div>
-  </div>
-  
-  
         </Container>
       </>
     );
   };
   
   export default Home;
-  
