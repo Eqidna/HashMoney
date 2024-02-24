@@ -125,7 +125,7 @@ const Home: NextPage = () => {
             </Flex>
                 
     <Flex alignItems="center" flexWrap="wrap">
-    <p
+  <p
     className={`${styles.description} ${styles.reduceSpace}`}
     style={{
       color: "white",
@@ -134,9 +134,11 @@ const Home: NextPage = () => {
       flex: "1",
       margin: "0 20px",
     }}
-   >
+  >
     Brace yourself to reshape the rules, and surpass the limitations forced upon civilization.
+    <br />
     Mo symbolizes hope for a brighter future. Embark on a journey to redefine the concept of currency and restore its intrinsic value.
+    <br />
     Join #MO in taking the first step towards making money great again.
     <br /><br />
     Follow these steps to obtain legendary status and level the playing field!
@@ -145,9 +147,9 @@ const Home: NextPage = () => {
       <li>HODL your #MO.</li>
       <li>Mint your 1% HashMoney interest every 15 days.</li>
     </ul>
-      </p>
-  
-    </Flex>
+  </p>
+</Flex>
+
               
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <Image
