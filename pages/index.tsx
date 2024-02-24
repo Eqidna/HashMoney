@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         
         ) : (
           <Container maxW="1200px" centerContent>
-            <Heading color="white" fontSize="50px">
+            <Heading color="white" fontSize="40px">
             Welcome to HASH MONEY!
             </Heading>
   
@@ -63,6 +63,7 @@ const Home: NextPage = () => {
             <main className={styles.main}>
               <h1 className={`${styles.title} ${styles.reduceSpace}`}>
                 <b>HashMoney, Utility Token for HashSkribe!</b>{" "}
+                  <b>#MO, Digital Money Minted By The People, For The People!</b>{" "}
                 <a
                   href="https://polygonscan.com/address/0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                   className={styles.link}
@@ -86,7 +87,7 @@ const Home: NextPage = () => {
                   fontWeight: "bold",
                 }}
               >
-                Use #MO to HashSkribe data/content directly to the Polygon Network.{" "}
+                Use #MO to HashSkribe data/content directly to the Polygon Network or the Ethereum Classic Blockchain{" "}
               </p>
   
               <div style={{ display: "flex", justifyContent: "center" }}>
@@ -141,9 +142,11 @@ const Home: NextPage = () => {
       margin: "0 20px",
     }}
   >
-    Brace yourself to reshape the rules, surpass your limits.
+    Brace yourself to reshape the rules, and surpass the limitations forced upon civilization.
+    Mo symbolizes hope for a brighter future. Let's embark on a journey to redefine the concept of currency and restore its intrinsic value.
+    Join #MO in taking the first step towards making money great again.
     <br /><br />
-    Follow these steps to obtain legendary status!
+    Follow these steps to obtain legendary status and level the playing field!
     <ul>
       <li>Claim your #MO Airdrop.</li>
       <li>HODL your #MO.</li>
@@ -184,6 +187,24 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
+                <div className={styles.connect}></div>
+  <div className={styles.grid}>
+    <a
+      href="https://app.hebeswap.com/#/add/ETC/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+      className={`${styles.card} ${styles.sameSize}`}
+      target="_blank"
+    >
+      <h2
+        className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
+        style={{ color: "white", fontSize: "20px" }}
+      >
+        BUY #MO
+      </h2>
+      <p className={styles.paragraph} style={{ color: "white" }}>
+        Now Available on Hebeswap, Ethereum Classic Mainnet
+      </p>
+    </a>
+  </div>
   
   <div className={styles.connect}></div>
   <div className={styles.grid}>
@@ -203,6 +224,25 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
+
+                <div className={styles.connect}></div>
+  <div className={styles.grid}>
+    <a
+      href="https://etc.blockscout.com/token/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+      className={`${styles.card} ${styles.sameSize}`}
+      target="_blank"
+    >
+      <h2
+        className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
+        style={{ color: "white", fontSize: "20px" }}
+      >
+        Blockscout ETCscan #MO
+      </h2>
+      <p className={styles.paragraph} style={{ color: "white" }}>
+        View the Contract Overview, execute functions, view tx and more.
+      </p>
+    </a>
+  </div>
   
   <div className={styles.grid}>
     <a
@@ -214,7 +254,25 @@ const Home: NextPage = () => {
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
         style={{ color: "white", fontSize: "20px" }}
       >
-        DEXTOOLS #MO
+        Polygon DEXTOOLS #MO
+      </h2>
+      <p className={styles.paragraph} style={{ color: "white" }}>
+        Everything in one place.
+      </p>
+    </a>
+  </div>
+
+                <div className={styles.grid}>
+    <a
+      href="https://www.dextools.io/app/en/etc/pair-explorer/0x8f2f7cd7c76f31d9d59ba168f2e39fdc7fef6d1c?t=1708783930062"
+      className={`${styles.card} ${styles.sameSize}`}
+      target="_blank"
+    >
+      <h2
+        className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
+        style={{ color: "white", fontSize: "20px" }}
+      >
+        ETC DEXTOOLS #MO
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
         Everything in one place.
@@ -301,12 +359,12 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Get Some $MATIC
+                    Get Some $MATIC/$ETC
                   </h2>
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
-                    Have $MATIC in your wallet to switch to #MO. If you dont
-                    have any Polygon MATIC, you can buy directly on metamask,
+                    Have $MATIC/ETC in your wallet to switch to #MO. If you dont
+                    have any $MATIC or $ETC, you can buy directly on metamask,
                     transfer from another wallet, or buy on another exchange and
                     send it to your wallet.
                   </p>
@@ -329,13 +387,13 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Go to Uniswap
+                    Go to Uniswap/HEBESwap
                   </h2>
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
-                    Connect to Uniswap. Go to app.uniswap.org in google chrome or
-                    on the browser inside your Metamask app. Connect your wallet.
-                    Paste the #MO token address into Uniswap, select HashMoney,
+                    Connect to Uniswap/HEBESWAP. Go to app.uniswap.org or app.hebeswap.com/#/swap in Google Chrome or
+                    on the browser inside your Metamask or other wallet app. Connect your wallet.
+                    Paste the #MO token address into Uniswap/HebeSwap, select #MO HashMoney,
                     and confirm. When Metamask prompts you for a wallet signature,
                     sign.
                   </p>
@@ -372,6 +430,35 @@ const Home: NextPage = () => {
               
             </div>
           </div>
+
+            <div className={styles.grid}>
+            <div className={styles.outerContainer}>
+              
+  
+              <a
+                href="https://app.hebeswap.com/#/swap?inputCurrency=ETC&outputCurrency=0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+                className={`${styles.card} ${styles.widerContainer}`}
+                target="_blank"
+              >
+                <div className={styles.cardContent}>
+                  <h2
+                    className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
+                    style={{ color: "white", fontSize: "20px" }}
+                  >
+                    Switch $ETC for #MO
+                  </h2>
+                  <p className={styles.paragraph} style={{ color: "white" }}>
+                    We have ZERO taxes so you dont need to worry about buying
+                    with a specific slippage, although you may need to use
+                    slippage during times of market volatility.
+                  </p>
+                </div>
+              </a>
+  
+              
+            </div>
+          </div>
+  
   
           <div>
             <Flex h="10vh" justifyContent="center" alignItems="center">
@@ -390,7 +477,7 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-        #MO, for payment!
+        #MO, for payment! #Mo for a Better Tomorrow for Families Around the Globe.
       </p>
     </Flex>
     <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
@@ -403,7 +490,8 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-        You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic to cover the gas fees.
+        You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic or 
+          Ethereum Classic to cover the gas fees.
       </p>
     </Flex>
   </div>
