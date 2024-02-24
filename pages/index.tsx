@@ -59,11 +59,10 @@ const Home: NextPage = () => {
         )}
   
         <Container maxW="1200px">
-        <div className={styles.container}>
-        <main className={styles.main}>
+          <div className={styles.container}>
+            <main className={styles.main}>
               <h1 className={`${styles.title} ${styles.reduceSpace}`}>
-                <b>HashMoney, Utility Token for HashSkribe!
-                  #MO, Digital Money Minted By The People, For The People!</b>{" "}
+                <b>HashMoney, Utility Token for HashSkribe! #MO, Digital Money Minted By The People, For The People!</b>{" "}
                 <a
                   href="https://polygonscan.com/address/0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                   className={styles.link}
@@ -79,7 +78,6 @@ const Home: NextPage = () => {
                   ></span>
                 </a>
               </h1>
-            </main>
               <p
                 className={`${styles.description} ${styles.reduceSpace}`}
                 style={{
@@ -88,7 +86,7 @@ const Home: NextPage = () => {
                   fontWeight: "bold",
                 }}
               >
-                Use #MO to HashSkribe data/content directly to the Polygon Network or the Ethereum Classic Blockchain{" "}
+                Use #MO to HashSkribe data/content directly to the Polygon Network or the Ethereum Classic Blockchain.{" "}
               </p>
   
               <div style={{ display: "flex", justifyContent: "center" }}>
@@ -188,7 +186,7 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
-                <div className={styles.connect}></div>
+
   <div className={styles.grid}>
     <a
       href="https://app.hebeswap.com/#/add/ETC/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
@@ -205,7 +203,7 @@ const Home: NextPage = () => {
         Now Available on Hebeswap, Ethereum Classic Mainnet
       </p>
     </a>
-  </div>
+  </div>              
   
   <div className={styles.connect}></div>
   <div className={styles.grid}>
@@ -226,7 +224,6 @@ const Home: NextPage = () => {
     </a>
   </div>
 
-                <div className={styles.connect}></div>
   <div className={styles.grid}>
     <a
       href="https://etc.blockscout.com/token/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
@@ -243,7 +240,7 @@ const Home: NextPage = () => {
         View the Contract Overview, execute functions, view tx and more.
       </p>
     </a>
-  </div>
+  </div>              
   
   <div className={styles.grid}>
     <a
@@ -255,7 +252,7 @@ const Home: NextPage = () => {
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
         style={{ color: "white", fontSize: "20px" }}
       >
-        Polygon DEXTOOLS #MO
+        DEXTOOLS #MO
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
         Everything in one place.
@@ -263,7 +260,7 @@ const Home: NextPage = () => {
     </a>
   </div>
 
-                <div className={styles.grid}>
+  <div className={styles.grid}>
     <a
       href="https://www.dextools.io/app/en/etc/pair-explorer/0x8f2f7cd7c76f31d9d59ba168f2e39fdc7fef6d1c?t=1708783930062"
       className={`${styles.card} ${styles.sameSize}`}
@@ -279,7 +276,7 @@ const Home: NextPage = () => {
         Everything in one place.
       </p>
     </a>
-  </div>
+  </div>              
   
   <div className={styles.connect}></div>
   <div className={styles.grid}>
@@ -299,8 +296,7 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
-   </div>
-         
+  
   
               <div className={styles.connect}></div>
               <div className={styles.grid}>
@@ -311,11 +307,10 @@ const Home: NextPage = () => {
                 
   
                 <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
-            </div>
-    
-        </div>
+              </div>
+            </main>
+          </div>
         </Container>
-        
         <Container maxW="800px" centerContent>
           <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
           <Heading color="white" fontSize="50px">
@@ -362,7 +357,7 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Get Some $MATIC/$ETC
+                    Get Some $MATIC
                   </h2>
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
@@ -390,7 +385,7 @@ const Home: NextPage = () => {
                     className={`${styles.heading} ${styles.centered} ${styles.largeText}`}
                     style={{ color: "white", fontSize: "20px" }}
                   >
-                    Go to Uniswap/HEBESwap
+                    Go to Uniswap
                   </h2>
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
@@ -430,10 +425,11 @@ const Home: NextPage = () => {
                 </div>
               </a>
   
-           </div>
+              
+            </div>
           </div>
 
-            <div className={styles.grid}>
+        <div className={styles.grid}>
             <div className={styles.outerContainer}>
               
   
@@ -460,8 +456,7 @@ const Home: NextPage = () => {
               
             </div>
           </div>
-  
-  
+            
           <div>
             <Flex h="10vh" justifyContent="center" alignItems="center">
               <Heading color="white" fontSize="20px"></Heading>
@@ -479,7 +474,7 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-        #MO, for payment! #Mo for a Better Tomorrow for Families Around the Globe.
+         #MO, for payment! #Mo for a Better Tomorrow for Families Around the Globe.
       </p>
     </Flex>
     <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
@@ -492,7 +487,7 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-        You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic or 
+         You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic or 
           Ethereum Classic to cover the gas fees.
       </p>
     </Flex>
@@ -519,7 +514,7 @@ const Home: NextPage = () => {
         marginBottom: "20px", // Increase the margin bottom for larger spacing
       }}
     >
-     Hash Money, holds the key to the future, we eagerly await your arrival.
+     HashMoney, holds the key to the future, we eagerly await your arrival.
     </p>
     </Flex>
   </div>
@@ -548,3 +543,4 @@ const Home: NextPage = () => {
   };
   
   export default Home;
+  
