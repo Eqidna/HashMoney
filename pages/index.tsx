@@ -36,9 +36,7 @@ const Home: NextPage = () => {
             <Box>
               <Mint />
             </Box>
-            <Box>
-             
-            </Box>
+           
             
           </Flex>
         </Container>
