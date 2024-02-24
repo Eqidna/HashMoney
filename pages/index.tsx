@@ -120,7 +120,11 @@ const Home: NextPage = () => {
                     margin: "0 20px",
                   }}
                 >
-                 Hash Money, holds the key to the future, we eagerly await your arrival.
+                    HashSkribe isn't merely a platform for advocating free speech;
+                    <br /> 
+                    along with HashMoney, it is a lifeline for the next generation and their families, 
+                    <br />
+                    providing them with a digital currency immune to the ravages of inflation.
                 </p>
             </Flex>
                 
