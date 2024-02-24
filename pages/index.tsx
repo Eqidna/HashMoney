@@ -540,7 +540,7 @@ const Home: NextPage = () => {
   
   
   
-        </div></Container>
+        </Container>
       </>
     );
   };
