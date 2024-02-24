@@ -536,8 +536,11 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-         You can receive this coin through a completely free airdrop, with the only condition being that you possess Polygon Matic or 
-          Ethereum Classic to cover the gas fees.
+         You can receive this coin through a completely free airdrop, 
+         <br />
+         with the only condition being that you possess Polygon Matic or
+         <br />
+         Ethereum Classic to cover the gas fees.
       </p>
     </Flex>
   </div>
