@@ -59,8 +59,8 @@ const Home: NextPage = () => {
         )}
   
         <Container maxW="1200px">
-          <div className={styles.container}>
-            <main className={styles.main}>
+        <div className={styles.container}>
+        <main className={styles.main}>
               <h1 className={`${styles.title} ${styles.reduceSpace}`}>
                 <b>HashMoney, Utility Token for HashSkribe!</b>{" "}
                   <b>#MO, Digital Money Minted By The People, For The People!</b>{" "}
@@ -310,10 +310,11 @@ const Home: NextPage = () => {
                 
   
                 <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
-              </div>
-    </main>
-          </div>
+            </div>
+        </main>
+        </div>
         </Container>
+        
         <Container maxW="800px" centerContent>
           <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
           <Heading color="white" fontSize="50px">
