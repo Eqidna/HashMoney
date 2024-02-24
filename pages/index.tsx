@@ -137,7 +137,9 @@ const Home: NextPage = () => {
   >
     Brace yourself to reshape the rules, and surpass the limitations forced upon civilization.
     <br />
-    Mo symbolizes hope for a brighter future. Embark on a journey to redefine the concept of currency and restore its intrinsic value.
+    Mo symbolizes hope for a brighter future. 
+    <br />  
+    Embark on a journey to redefine the concept of currency and restore its intrinsic value.
     <br />
     Join #MO in taking the first step towards making money great again.
     <br /><br />
