@@ -44,8 +44,8 @@ const Home: NextPage = () => {
         
         ) : (
           <Container maxW="1200px" centerContent>
-            <Heading color="white" fontSize="50px">
-            Welcome to HashMoney!
+            <Heading color="white" fontSize="40px">
+            Welcome to HASHMONEY!
             </Heading>
   
             <Flex h="20vh" justifyContent="center" alignItems="center">
