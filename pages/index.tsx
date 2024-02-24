@@ -137,13 +137,14 @@ const Home: NextPage = () => {
   >
     Brace yourself to reshape the rules, and surpass the limitations forced upon civilization.
     <br />
-    Mo symbolizes hope for a brighter future. 
+    #MO symbolizes hope for a brighter future for the next generation. 
     <br />  
     Embark on a journey to redefine the concept of currency and restore its intrinsic value.
     <br />
     Join #MO in taking the first step towards making money great again.
     <br /><br />
     Follow these steps to obtain legendary status and level the playing field!
+    <br /><br />
     <ul>
       <li>Claim your #MO Airdrop.</li>
       <li>HODL your #MO.</li>
