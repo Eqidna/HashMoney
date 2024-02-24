@@ -204,7 +204,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "16px" }}
+        style={{ color: "white", fontSize: "14px" }}
       >
         Read/Write #MO on Polygon
       </h2>
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
     >
       <h2
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
-        style={{ color: "white", fontSize: "16px" }}
+        style={{ color: "white", fontSize: "14px" }}
       >
         Read/Write #MO on ETC
       </h2>
