@@ -298,7 +298,8 @@ const Home: NextPage = () => {
       </p>
     </a>
   </div>
-  
+   </div>
+         
   
               <div className={styles.connect}></div>
               <div className={styles.grid}>
@@ -427,7 +428,8 @@ const Home: NextPage = () => {
                 </div>
               </a>
   
-          
+           </div>
+          </div>
 
             <div className={styles.grid}>
             <div className={styles.outerContainer}>
@@ -538,7 +540,7 @@ const Home: NextPage = () => {
   
   
   
-        </Container>
+        </div></Container>
       </>
     );
   };
