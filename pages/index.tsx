@@ -178,7 +178,7 @@ const Home: NextPage = () => {
     style={{
       color: "white",
       wordWrap: "break-word",
-      fontWeight: "bold",
+      fontSize: "16px", // Adjust font size here
       flex: "1",
       margin: "0 20px",
     }}
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
     Will you join us in taking the first step towards a more compassionate and equitable future?
     <br /><br />
       <strong>How can you help?</strong>
-    <ul>
+    <ul style={{ fontSize: "15px" }}>
       <li>Spread Awareness: Share information about #MO across crypto communities, social media platforms, and relevant forums.
           <br />
           By increasing awareness, more people will become interested in the project, potentially leading to greater participation and adoption.</li>
