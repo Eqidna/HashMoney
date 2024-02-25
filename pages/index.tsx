@@ -170,6 +170,62 @@ const Home: NextPage = () => {
                   height={500} // Set the desired height of the image
                 />
               </div>
+
+
+<Flex alignItems="center" flexWrap="wrap">
+  <p
+    className={`${styles.description} ${styles.reduceSpace}`}
+    style={{
+      color: "white",
+      wordWrap: "break-word",
+      fontWeight: "bold",
+      flex: "1",
+      margin: "0 20px",
+    }}
+  >
+    The #MO smart contract operates with the simplicity of the faucets of old, distributing HashMoney to those in need.
+    <br />
+    Families can access an initial sum of #MO digital currency with a simple interaction, followed by regular distributions every two weeks.
+    <br />  
+    While the supply isn't limitless, it's substantial enough to sustain these individuals for years to come,
+    <br />
+    echoing the principles of a universal basic income.
+    <br /><br />
+    However, to fully realize this vision, we rely on the backing of crypto enthusiasts like you. 
+    <br />
+    Will you join us in taking the first step towards a more compassionate and equitable future?
+    <br /><br />
+      <strong>How can you help?</strong>
+    <ul>
+      <li>Spread Awareness: Share information about #MO across crypto communities, social media platforms, and relevant forums.
+          <br />
+          By increasing awareness, more people will become interested in the project, potentially leading to greater participation and adoption.</li>
+      <li>Provide Liquidity: Participate in liquidity pools or exchanges where #MO is listed. 
+          <br />
+          By providing liquidity, you contribute to the stability and accessibility of the token, making it easier for families to exchange #MO for goods and services.</li>
+      <li>Offer Technical Support: Offer your expertise in blockchain development, smart contract auditing, or other technical areas to the #MO team. 
+          <br />
+          By providing technical support, you can help ensure the security and functionality of the #MO platform, fostering trust among users.</li>
+      <li>Engage in Community Building: Actively engage with the #MO community by participating in discussions, answering questions, and providing support to fellow members. 
+          <br />
+          By building a strong and supportive community, you create a positive environment where families feel comfortable and empowered to claim their #MO airdrops.</li>
+        <li>Advocate for Adoption: Advocate for businesses, charities, and other organizations to accept #MO as a form of payment or donation. 
+            <br />
+            By expanding the use cases for #MO, you increase its utility and value, ultimately benefiting the families who rely on it for financial support.</li>
+    </ul>
+      <strong>Stand with us for #MO, a labour of love for our sons and daughters and the coming generation,
+          <br />
+          granting them an equitable path forward with a currency untouched by inflation and governmental manipulation,
+          <br />
+          securing a promising future.</strong>
+  </p>
+</Flex>
+
+
+
+
+                
+                
               
               <div className={styles.connect}></div>
   <div className={styles.grid}>
