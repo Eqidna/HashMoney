@@ -187,7 +187,7 @@ const Home: NextPage = () => {
     <br />
     Families can access an initial sum of #MO digital currency with a simple interaction, followed by regular distributions every two weeks.
     <br />  
-    While the supply isn't limitless, it's substantial enough to sustain these individuals for years to come,
+    While the supply is finite, it's substantial enough to sustain these individuals for years to come,
     <br />
     echoing the principles of a universal basic income.
     <br /><br />
