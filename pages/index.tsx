@@ -427,7 +427,7 @@ const Home: NextPage = () => {
         </Container>
         <Container maxW="800px" centerContent>
           <Flex h="2vh" justifyContent="center" alignItems="center"></Flex>
-          <Heading color="white" fontSize="40px">
+          <Heading color="white" fontSize="30px">
             How to buy
           </Heading>
   
