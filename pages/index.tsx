@@ -579,21 +579,20 @@ const Home: NextPage = () => {
       <p
         style={{
           color: "white",
-          fontSize: "22px",
+          fontSize: "16px",
           fontWeight: "bold",
           wordWrap: "break-word",
           maxWidth: "500px",
         }}
       >
-         #MO, for payment! #Mo for a Better Tomorrow for Families Around the Globe.
+         #MO, for peer-to-peer payment! #Mo for savings! #MO for a Better Tomorrow for Families Around the Globe.
       </p>
     </Flex>
     <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
       <p
         style={{
           color: "white",
-          fontSize: "20px",
-          fontWeight: "bold",
+          fontSize: "12px",
           wordWrap: "break-word",
           maxWidth: "500px",
         }}
@@ -602,7 +601,7 @@ const Home: NextPage = () => {
          <br />
          with the only condition being that you possess Polygon Matic or
          <br />
-         Ethereum Classic to cover the gas fees.
+         Ethereum Classic to cover their network gas fees.
       </p>
     </Flex>
   </div>
@@ -621,14 +620,13 @@ const Home: NextPage = () => {
     <p
       style={{
         color: "white",
-        fontWeight: "bold",
-        fontSize: "20px",
+        fontSize: "18px",
         wordWrap: "break-word",
         maxWidth: "500px",
         marginBottom: "20px", // Increase the margin bottom for larger spacing
       }}
     >
-     HashMoney, holds the key to the future, we eagerly await your arrival.
+     HashMoney holds the key to the future, we eagerly await your arrival.
     </p>
     </Flex>
   </div>
@@ -638,7 +636,7 @@ const Home: NextPage = () => {
       style={{
         color: "white",
         fontWeight: "bold",
-        fontSize: "20px",
+        fontSize: "15px",
         wordWrap: "break-word",
         maxWidth: "500px",
         marginBottom: "20px", // Increase the margin bottom for larger spacing
