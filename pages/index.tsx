@@ -589,9 +589,9 @@ const Home: NextPage = () => {
         textAlign: "center", // Align text to the center
       }}
     >
-      #MO, for peer-to-peer payment!
+      #MO for peer-to-peer Payment!
       <br />
-      #Mo for savings!
+      #MO for Savings!
       <br />
       #MO for a Brighter Tomorrow for Families Around the Globe.
     </p>
