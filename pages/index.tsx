@@ -83,6 +83,7 @@ const Home: NextPage = () => {
                 style={{
                   color: "WHITE",
                   wordWrap: "break-word",
+                    fontSize: "16px",
                   fontWeight: "bold",
                 }}
               >
