@@ -156,11 +156,12 @@ const Home: NextPage = () => {
     <br /><br />
     Follow these steps to obtain legendary status and level the playing field!
     <br /><br />
-    <ul>
+    <ul style={{ fontSize: "15px", textAlign: "center", listStylePosition: "inside" }}>
       <li>Claim your #MO Airdrop.</li>
       <li>HODL your #MO.</li>
       <li>Mint your 1% HashMoney interest every 15 days.</li>
     </ul>
+
   </p>
 </Flex>
 
@@ -199,7 +200,7 @@ const Home: NextPage = () => {
     Will you join us in taking the first step towards a more compassionate and equitable future?
     <br /><br />
       <strong>How can you help?</strong>
-    <ul style={{ fontSize: "15px" }}>
+    <ul style={{ fontSize: "15px", textAlign: "center", listStylePosition: "inside" }}>
       <li><strong>Spread Awareness:</strong> Share information about #MO across crypto communities, social media platforms, and relevant forums.
           <br />
           By increasing awareness, more people will become interested in the project, potentially leading to greater participation and adoption.</li>
