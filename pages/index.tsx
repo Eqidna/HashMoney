@@ -200,23 +200,23 @@ const Home: NextPage = () => {
     <br /><br />
       <strong>How can you help?</strong>
     <ul style={{ fontSize: "15px" }}>
-      <li>Spread Awareness: Share information about #MO across crypto communities, social media platforms, and relevant forums.
+      <li><strong>Spread Awareness:</strong> Share information about #MO across crypto communities, social media platforms, and relevant forums.
           <br />
           By increasing awareness, more people will become interested in the project, potentially leading to greater participation and adoption.</li>
         <br />
-      <li>Provide Liquidity: Participate in liquidity pools or exchanges where #MO is listed. 
+      <li><strong>Provide Liquidity:</strong> Participate in liquidity pools or exchanges where #MO is listed. 
           <br />
           By providing liquidity, you contribute to the stability and accessibility of the token, making it easier for families to exchange #MO for goods and services.</li>
         <br />
-      <li>Offer Technical Support: Offer your expertise in blockchain development, smart contract auditing, or other technical areas to the #MO team. 
+      <li><strong>Offer Technical Support:</strong> Offer your expertise in blockchain development, smart contract auditing, or other technical areas to the #MO team. 
           <br />
           By providing technical support, you can help ensure the security and functionality of the #MO platform, fostering trust among users.</li>
         <br />
-      <li>Engage in Community Building: Actively engage with the #MO community by participating in discussions, answering questions, and providing support to fellow members. 
+      <li><strong>Engage in Community Building:</strong> Actively engage with the #MO community by participating in discussions, answering questions, and providing support to fellow members. 
           <br />
           By building a strong and supportive community, you create a positive environment where families feel comfortable and empowered to claim their #MO airdrops.</li>
         <br />
-        <li>Advocate for Adoption: Advocate for businesses, charities, and other organizations to accept #MO as a form of payment or donation. 
+        <li><strong>Advocate for Adoption:</strong> Advocate for businesses, charities, and other organizations to accept #MO as a form of payment or donation. 
             <br />
             By expanding the use cases for #MO, you increase its utility and value, ultimately benefiting the families who rely on it for financial support.</li>
         <br />
@@ -284,7 +284,7 @@ const Home: NextPage = () => {
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
         style={{ color: "white", fontSize: "14px" }}
       >
-        Read/Write #MO on Polygon
+       #MO Read/Write on Polygon
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
         Thirdweb: Another option for interacting with the HashMoney smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
@@ -306,7 +306,7 @@ const Home: NextPage = () => {
         className={`${styles.heading} ${styles.boldText} ${styles.centered}`}
         style={{ color: "white", fontSize: "14px" }}
       >
-        Read/Write #MO on ETC
+        #MO Read/Write on ETC
       </h2>
       <p className={styles.paragraph} style={{ color: "white" }}>
         Thirdweb: Another option for interacting with the HashMoney smart contract. Execute write/read functions: Claim Airdrop, Mint & more.
@@ -578,40 +578,43 @@ const Home: NextPage = () => {
           </div>
   
           <div>
-    <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
-      <p
-        style={{
-          color: "white",
-          fontSize: "15px",
-          fontWeight: "bold",
-          wordWrap: "break-word",
-          maxWidth: "500px",
-        }}
-      >
-          #MO, for peer-to-peer payment!
-          <br />
-          #Mo for savings!
-          <br />
-          #MO for a Brighter Tomorrow for Families Around the Globe.
-      </p>
-    </Flex>
-    <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
-      <p
-        style={{
-          color: "white",
-          fontSize: "15px",
-          wordWrap: "break-word",
-          maxWidth: "500px",
-        }}
-      >
-         You can receive this coin through a completely free airdrop, 
-         <br />
-         with the only condition being that you possess Polygon Matic or
-         <br />
-         Ethereum Classic to cover their network gas fees.
-      </p>
-    </Flex>
-  </div>
+  <Flex h="10vh" justifyContent="center" alignItems="center" mb={4}>
+    <p
+      style={{
+        color: "white",
+        fontSize: "15px",
+        fontWeight: "bold",
+        wordWrap: "break-word",
+        maxWidth: "500px",
+        textAlign: "center", // Align text to the center
+      }}
+    >
+      #MO, for peer-to-peer payment!
+      <br />
+      #Mo for savings!
+      <br />
+      #MO for a Brighter Tomorrow for Families Around the Globe.
+    </p>
+  </Flex>
+  <Flex h="10vh" justifyContent="center" alignItems="center" mb={4}>
+    <p
+      style={{
+        color: "white",
+        fontSize: "15px",
+        wordWrap: "break-word",
+        maxWidth: "500px",
+        textAlign: "center", // Align text to the center
+      }}
+    >
+      You can receive this coin through a completely free airdrop, 
+      <br />
+      with the only condition being that you possess Polygon Matic or
+      <br />
+      Ethereum Classic to cover their network gas fees.
+    </p>
+  </Flex>
+</div>
+
 
   <div style={{ display: "flex", justifyContent: "center" }}>
                 <Image
