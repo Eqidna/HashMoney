@@ -579,7 +579,7 @@ const Home: NextPage = () => {
       <p
         style={{
           color: "white",
-          fontSize: "16px",
+          fontSize: "15px",
           fontWeight: "bold",
           wordWrap: "break-word",
           maxWidth: "500px",
@@ -592,7 +592,7 @@ const Home: NextPage = () => {
       <p
         style={{
           color: "white",
-          fontSize: "12px",
+          fontSize: "15px",
           wordWrap: "break-word",
           maxWidth: "500px",
         }}
@@ -620,7 +620,7 @@ const Home: NextPage = () => {
     <p
       style={{
         color: "white",
-        fontSize: "18px",
+        fontSize: "15px",
         wordWrap: "break-word",
         maxWidth: "500px",
         marginBottom: "20px", // Increase the margin bottom for larger spacing
