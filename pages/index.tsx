@@ -118,6 +118,7 @@ const Home: NextPage = () => {
                   style={{
                     color: "white",
                     wordWrap: "break-word",
+                      fontSize: "16px",
                     fontWeight: "bold",
                     flex: "2",
                     margin: "0 20px",
@@ -139,6 +140,7 @@ const Home: NextPage = () => {
     style={{
       color: "white",
       wordWrap: "break-word",
+        fontSize: "16px",
       fontWeight: "bold",
       flex: "1",
       margin: "0 20px",
