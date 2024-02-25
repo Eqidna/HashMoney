@@ -588,7 +588,11 @@ const Home: NextPage = () => {
           maxWidth: "500px",
         }}
       >
-         #MO, for peer-to-peer payment! #Mo for savings! #MO for a Better Tomorrow for Families Around the Globe.
+          #MO, for peer-to-peer payment!
+          <br />
+          #Mo for savings!
+          <br />
+          #MO for a Brighter Tomorrow for Families Around the Globe.
       </p>
     </Flex>
     <Flex h="15vh" justifyContent="center" alignItems="center" mb={4}>
