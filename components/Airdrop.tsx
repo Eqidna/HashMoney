@@ -1,58 +1,66 @@
-import { Box, Card, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
-import { Web3Button } from "@thirdweb-dev/react";
-import { useContract, useContractWrite } from "@thirdweb-dev/react";
+import { useState } from 'react';
+import { Box, Card, Heading, useToast } from "@chakra-ui/react";
+import { useContract } from "@thirdweb-dev/react"; // Import only necessary hooks
 
 export default function Airdrop() {
   const { contract } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
-  const { mutateAsync: claimAirdrop, isLoading } = useContractWrite(contract, "claimAirdrop");
+  const toast = useToast();
+  const [showEventPopup, setShowEventPopup] = useState(false);
 
-  const call = async (args: never[]) => {
+  const claimAirdrop = async () => {
     try {
-      const data = await claimAirdrop({ args });
-      console.info("contract call successs", data);
+      if (!contract) {
+        throw new Error("Contract not initialized.");
+      }
+
+      // Call the claimAirdrop function on the contract
+      await contract.call("claimAirdrop", []);
+      setShowEventPopup(true);
     } catch (err) {
-      console.error("contract call failure", err);
+      console.error("Airdrop claim failed:", err);
+      toast({
+        title: "Error",
+        description: "Failed to claim the airdrop. Please try again later.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
     }
   };
 
   return (
-    <Card p={5} mt={5} bg="#23253e">
-      <Heading
-        textAlign="center"
-        bg="blue.500"
-        bgGradient="linear(to-r, blue.900, blue.500)"
-        borderRadius="md"
-        p={1}
-        fontSize="xl"
-        style={{ color: 'white' }}
-      >
-        Claim Airdrop
-      </Heading>
-      <SimpleGrid columns={1} width="275px" mx="auto">
-        <Card
-          p={2}
-          m={2}
+    <Box>
+      <Card p={5} mt={5} bg="#23253e">
+        <Heading
+          textAlign="center"
           bg="blue.500"
           bgGradient="linear(to-r, blue.900, blue.500)"
           borderRadius="md"
+          p={1}
+          fontSize="xl"
+          color="white"
+          onClick={claimAirdrop}
+          cursor="pointer"
         >
-          <Box textAlign="center" mb={1}>
-            {/* Render any additional content here */}
-          </Box>
-          <SimpleGrid columns={1} spacing={5}>
-            <Stack spacing={5}>
-              <Web3Button
-                contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
-                action={(contract) => {
-                  contract.call("claimAirdrop", []);
-                }}
-              >
-                Claim Your HashMoney
-              </Web3Button>
-            </Stack>
-          </SimpleGrid>
+          Claim #MO Airdrop
+        </Heading>
+      </Card>
+
+      {showEventPopup && (
+        <Card p={5} mt={5} bg="#23253e">
+          <Heading
+            textAlign="center"
+            bg="green.500"
+            bgGradient="linear(to-r, green.900, green.500)"
+            borderRadius="md"
+            p={1}
+            fontSize="xl"
+            color="white"
+          >
+            Airdrop Claimed!
+          </Heading>
         </Card>
-      </SimpleGrid>
-    </Card>
+      )}
+    </Box>
   );
 }
