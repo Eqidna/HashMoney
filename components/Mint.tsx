@@ -1,42 +1,66 @@
-import { Box, Card, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
-import { Web3Button } from "@thirdweb-dev/react";
+import { useState } from 'react';
+import { Box, Card, Heading, useToast } from "@chakra-ui/react";
+import { useContract } from "@thirdweb-dev/react"; // Import only necessary hooks
 
 export default function Mint() {
+  const { contract } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
+  const toast = useToast();
+  const [showEventPopup, setShowEventPopup] = useState(false);
+
+  const mint = async () => {
+    try {
+      if (!contract) {
+        throw new Error("Contract not initialized.");
+      }
+
+      // Call the claimAirdrop function on the contract
+      await contract.call("mint", []);
+      setShowEventPopup(true);
+    } catch (err) {
+      console.error("Mint failed:", err);
+      toast({
+        title: "Error",
+        description: "Failed to mint reward. Please try again later.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
+
   return (
-
-    <Card p={5} mt={5} bg="#23253e">
-    <Heading textAlign="center" bg="blue.500"
-        bgGradient="linear(to-r, blue.900, blue.500)"
-        borderRadius="md"
-        p={1} fontSize="xl"
-        style={{ color: 'white' }}>Mint #MO</Heading>
-    <SimpleGrid columns={1} width="275px" mx="auto">
-      <Card p={2} m={2} bg="blue.500"
-        bgGradient="linear(to-r, blue.900, blue.500)"
-        borderRadius="md"
+    <Box>
+      <Card p={5} mt={5} bg="#23253e">
+        <Heading
+          textAlign="center"
+          bg="blue.500"
+          bgGradient="linear(to-r, blue.900, blue.500)"
+          borderRadius="md"
+          p={1}
+          fontSize="xl"
+          color="white"
+          onClick={mint}
+          cursor="pointer"
         >
-        <Box textAlign="center" mb={1}>
-          {/* Render any additional content here */}
-        </Box>
-        <SimpleGrid columns={1} spacing={5}>
-          <Stack spacing={5}>
+          Mint #MO Rewards
+        </Heading>
+      </Card>
 
-         
-
-    <Web3Button
-      contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
-      action={(contract) => {
-        contract.call("mint", [])
-      }}
-    >
-      Mint #MO
-    </Web3Button>
-
- </Stack>
-          </SimpleGrid>
+      {showEventPopup && (
+        <Card p={5} mt={5} bg="#23253e">
+          <Heading
+            textAlign="center"
+            bg="green.500"
+            bgGradient="linear(to-r, green.900, green.500)"
+            borderRadius="md"
+            p={1}
+            fontSize="xl"
+            color="white"
+          >
+            Reward Claimed!
+          </Heading>
         </Card>
-      </SimpleGrid>
-    </Card>
-
-  )
+      )}
+    </Box>
+  );
 }
