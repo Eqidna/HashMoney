@@ -44,7 +44,7 @@ export default function Airdrop() {
               <Web3Button
                 contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                 action={(contract) => {
-                  contract.send("claimAirdrop", []);
+                  contract.call("claimAirdrop", []);
                 }}
               >
                 Claim Your HashMoney
