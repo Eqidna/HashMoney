@@ -7,6 +7,7 @@ import {
   coinbaseWallet,
   localWallet,
   magicLink,
+  trustWallet,
   metamaskWallet,
   paperWallet,
   safeWallet,
