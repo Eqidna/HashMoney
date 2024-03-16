@@ -1,4 +1,5 @@
-import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
+
+import { ThirdwebProvider, phantomWallet, rainbowWallet, useContract, zerionWallet  } from "@thirdweb-dev/react";
 import type { AppProps } from "next/app";
 import {
   walletConnect,
@@ -46,11 +47,16 @@ function MyApp({ Component, pageProps }: AppProps) {
         Dogechain,
       ]}
       supportedWallets={[
-        metamaskWallet(),
-        walletConnect(),
-        coinbaseWallet(),
-        safeWallet(),
-      ]}
+          metamaskWallet(),
+          walletConnect(),
+          coinbaseWallet(),
+          safeWallet(),
+          localWallet(),
+          trustWallet(),
+          zerionWallet(),
+          rainbowWallet(),
+          phantomWallet(),
+        ]}
      
     >
       <ChakraProvider>
