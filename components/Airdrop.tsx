@@ -1,7 +1,20 @@
 import { Box, Card, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
 import { Web3Button } from "@thirdweb-dev/react";
+import { useContract, useContractWrite } from "@thirdweb-dev/react";
 
 export default function Airdrop() {
+  const { contract } = useContract("0xEddb551809Af5f6FE388288749cc89CB1bC5C495");
+  const { mutateAsync: claimAirdrop, isLoading } = useContractWrite(contract, "claimAirdrop");
+
+  const call = async (args: never[]) => {
+    try {
+      const data = await claimAirdrop({ args });
+      console.info("contract call successs", data);
+    } catch (err) {
+      console.error("contract call failure", err);
+    }
+  };
+
   return (
     <Card p={5} mt={5} bg="#23253e">
       <Heading
@@ -31,7 +44,7 @@ export default function Airdrop() {
               <Web3Button
                 contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495"
                 action={(contract) => {
-                  contract.call("claimAirdrop", []);
+                  contract.send("claimAirdrop", []);
                 }}
               >
                 Claim Your HashMoney
