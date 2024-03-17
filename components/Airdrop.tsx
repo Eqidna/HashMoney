@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { Box, Card, Heading, SimpleGrid, Stack, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, useDisclosure, useToast } from "@chakra-ui/react";
 import { Web3Button, useContract } from "@thirdweb-dev/react";
 
+// Custom Web3ButtonWrapper component
+const Web3ButtonWrapper = ({ contract, onClick, children }) => (
+  <Web3Button action={onClick}>
+    {children}
+  </Web3Button>
+);
+
 export default function Airdrop() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [showEventPopup, setShowEventPopup] = useState(false);
@@ -51,12 +58,9 @@ export default function Airdrop() {
             </Box>
             <SimpleGrid columns={1} spacing={5}>
               <Stack spacing={5}>
-                <Web3Button
-                  contract={contract} // Pass the contract object directly
-                  onClick={handleClaimAirdrop} // Use onClick instead of action
-                >
+                <Web3ButtonWrapper contract={contract} onClick={handleClaimAirdrop}>
                   Claim Your #MO
-                </Web3Button>
+                </Web3ButtonWrapper>
               </Stack>
             </SimpleGrid>
           </Card>
