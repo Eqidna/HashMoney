@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               <HashMoneyBalance />
             </Box>
             <Box>
-              <AirdropEligibilityChecker />
+              
             </Box>
             <Box>
               <Airdrop />
