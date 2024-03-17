@@ -79,7 +79,7 @@ export default function Airdrop() {
             {showEventPopup ? (
               <Box color="green.500">#MO Minted successfully!</Box>
             ) : (
-              <Box color="red.500">Mint failed. Please try again.</Box>
+              <Box color="blue.500">Mint failed. Please try again.</Box>
             )}
           </ModalBody>
         </ModalContent>
