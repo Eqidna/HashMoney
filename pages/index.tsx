@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConnectWallet, useAddress, ThirdwebProvider, useContract, useMetadata } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress, ThirdwebProvider, useContract, useMetadata, useContractWrite } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import { Container, Heading, Flex, Box, Center } from "@chakra-ui/react";
@@ -9,7 +9,6 @@ import Mint from "../components/Mint";
 import Image from "next/image";
 import coinImage from "../assets/Logopit_16902006371871.png";
 import supplyChartdata from "../assets/meta-chart (1).png"
-import AirdropEligibilityChecker from "../components/Eligibility";
 
 const contractAddress = "0xEddb551809Af5f6FE388288749cc89CB1bC5C495";
 
@@ -17,7 +16,8 @@ const contractAddress = "0xEddb551809Af5f6FE388288749cc89CB1bC5C495";
 const Home: NextPage = () => {
     const address = useAddress();
     const { contract } = useContract(contractAddress);
-    const { data, isLoading, error } = useMetadata(contract);
+    useMetadata(contract);
+    
   
     return (
       <>
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               <HashMoneyBalance />
             </Box>
             <Box>
-              
+            
             </Box>
             <Box>
               <Airdrop />
@@ -36,7 +36,9 @@ const Home: NextPage = () => {
             <Box>
               <Mint />
             </Box>
-           
+            <Box>
+              
+            </Box>
             
           </Flex>
         </Container>
@@ -258,7 +260,7 @@ const Home: NextPage = () => {
 
   <div className={styles.grid}>
     <a
-      href="https://app.hebeswap.com/#/add/ETC/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+      href="https://app.hebeswap.com/#/swap?inputCurrency=ETC&outputCurrency=0xd57A92C8aF6CcBe29CCd57Bb7de90a8175d23875"
       className={`${styles.card} ${styles.sameSize}`}
       target="_blank"
     >
@@ -299,7 +301,7 @@ const Home: NextPage = () => {
                 
 <div className={styles.grid}>
     <a
-      href="https://thirdweb.com/ethereum-classic/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d/explorer"
+      href="https://thirdweb.com/ethereum-classic/0xd57A92C8aF6CcBe29CCd57Bb7de90a8175d23875/explorer"
       className={`${styles.card} ${styles.sameSize}`}
       target="_blank"
     >
@@ -341,7 +343,7 @@ const Home: NextPage = () => {
 
   <div className={styles.grid}>
     <a
-      href="https://etc.blockscout.com/token/0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+      href="https://etc.blockscout.com/token/0xd57A92C8aF6CcBe29CCd57Bb7de90a8175d23875"
       className={`${styles.card} ${styles.sameSize}`}
       target="_blank"
     >
@@ -505,7 +507,7 @@ const Home: NextPage = () => {
   
                   <p className={styles.paragraph} style={{ color: "white" }}>
                     Connect to Uniswap/HEBESWAP. Go to app.uniswap.org or app.hebeswap.com/#/swap in Google Chrome or
-                    on the browser inside your Metamask or other wallet app. Connect your wallet.
+                    on the browser with your Metamask wallet extension or other wallet app with a browser. Connect your wallet.
                     Paste the #MO token address into Uniswap/HebeSwap, select #MO HashMoney,
                     and confirm. When Metamask prompts you for a wallet signature,
                     sign.
@@ -549,7 +551,7 @@ const Home: NextPage = () => {
               
   
               <a
-                href="https://app.hebeswap.com/#/swap?inputCurrency=ETC&outputCurrency=0xdf4c097533d9bf1d045cc333A9781c1962BF3F2d"
+                href="https://app.hebeswap.com/#/swap?inputCurrency=ETC&outputCurrency=0xd57A92C8aF6CcBe29CCd57Bb7de90a8175d23875"
                 className={`${styles.card} ${styles.widerContainer}`}
                 target="_blank"
               >
