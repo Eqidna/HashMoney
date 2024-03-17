@@ -3,8 +3,8 @@ import { Box, Card, Heading, SimpleGrid, Stack, Modal, ModalOverlay, ModalConten
 import { Web3Button, useContract } from "@thirdweb-dev/react";
 
 // Custom Web3ButtonWrapper component
-const Web3ButtonWrapper = ({ contract, onClick, children }: { contract: any; onClick: () => Promise<void>; children: React.ReactNode }) => (
-  <Web3Button action={onClick}>
+const Web3ButtonWrapper = ({ contractAddress, onClick, children }: { contractAddress: string; onClick: () => Promise<void>; children: React.ReactNode }) => (
+  <Web3Button contractAddress={contractAddress} action={onClick}>
     {children}
   </Web3Button>
 );
@@ -58,7 +58,7 @@ export default function Airdrop() {
             </Box>
             <SimpleGrid columns={1} spacing={5}>
               <Stack spacing={5}>
-                <Web3ButtonWrapper contract={contract} onClick={handleClaimAirdrop}>
+                <Web3ButtonWrapper contractAddress="0xEddb551809Af5f6FE388288749cc89CB1bC5C495" onClick={handleClaimAirdrop}>
                   Claim Your #MO
                 </Web3ButtonWrapper>
               </Stack>
