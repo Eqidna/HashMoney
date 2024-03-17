@@ -20,7 +20,7 @@ export default function Airdrop() {
       console.error(error); // Log the error for debugging
       toast({
         title: "Airdrop Claim Failed",
-        description: error.message || "An error occurred while claiming the Airdrop. Please try again.",
+        description: (error as Error)?.message || "An error occurred while claiming the Airdrop. Please try again.",
         status: "error",
         duration: 5000,
         isClosable: true,
