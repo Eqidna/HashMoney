@@ -78,7 +78,7 @@ export default function Airdrop() {
             {showEventPopup ? (
               <Box color="green.500">Airdrop claimed successfully!</Box>
             ) : (
-              <Box color="red.500">Airdrop claim failed. Please try again.</Box>
+              <Box color="blue.500">Airdrop claim failed. Please try again.</Box>
             )}
           </ModalBody>
         </ModalContent>
