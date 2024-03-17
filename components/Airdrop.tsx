@@ -3,7 +3,7 @@ import { Box, Card, Heading, SimpleGrid, Stack, Modal, ModalOverlay, ModalConten
 import { Web3Button, useContract } from "@thirdweb-dev/react";
 
 // Custom Web3ButtonWrapper component
-const Web3ButtonWrapper = ({ contract, onClick, children }) => (
+const Web3ButtonWrapper = ({ contract, onClick, children }: { contract: any; onClick: () => Promise<void>; children: React.ReactNode }) => (
   <Web3Button action={onClick}>
     {children}
   </Web3Button>
